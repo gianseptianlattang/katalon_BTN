@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Warning Validasi Pengeluaran Lebih Besar</name>
+   <tag></tag>
+   <elementGuidId>f0404245-b3d1-46df-af5f-c55dda5a80b1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='form_hitung_harga']/div/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>05954c76-e3c3-4ace-a23d-ec9a956cfe59</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Isi kurang dari nilai sebelumnya</value>
+      <webElementGuid>7d5b6c3f-f473-4a3f-947f-6b9a22b83ad6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;form_hitung_harga&quot;)/div[@class=&quot;col-md-12&quot;]/p[1]</value>
+      <webElementGuid>dd1148df-7efc-47b4-9571-e46ac3594a9e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='form_hitung_harga']/div/p</value>
+      <webElementGuid>fcd23dcb-6f04-4b3f-8408-8a677eb9b980</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Per Bulan'])[2]/following::p[2]</value>
+      <webElementGuid>c64d1de4-c2b9-4fa5-bdc4-2de161e39527</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jangka Waktu'])[2]/preceding::p[1]</value>
+      <webElementGuid>6e3e007e-97f3-4b42-a87b-e9761b59ba2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hitung'])[1]/preceding::p[1]</value>
+      <webElementGuid>621d284e-d0aa-41a8-94d0-ab7d439f9697</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Isi kurang dari nilai sebelumnya']/parent::*</value>
+      <webElementGuid>3d397618-d116-41cc-a6b9-dcabece33712</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/div/p</value>
+      <webElementGuid>8131f2cb-a8e5-4c60-a5af-536af8d9110f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Isi kurang dari nilai sebelumnya' or . = 'Isi kurang dari nilai sebelumnya')]</value>
+      <webElementGuid>12a45d1c-c827-4e8d-8be4-bb15890e7809</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
