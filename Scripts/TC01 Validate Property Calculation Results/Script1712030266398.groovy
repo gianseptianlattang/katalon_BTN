@@ -56,17 +56,26 @@ for (rowPositif = 1; rowPositif <= 5; rowPositif++) {
 
     println("Text value of the expectedResult: $expectedResult")
 
+    def testCaseValue = findTestData('Data Test BTN').getValue('Test Case', rowPositif)
+
+    def assertionMessage
+
     try {
         assert actualResult == expectedResult
 
-        println("Assertion Passed: Actual result ($actualResult) matches expected result ($expectedResult)")
+        WebUI.takeScreenshot([('text') : testCaseValue + ' - Passed', ('x') : 50, ('y') : 750, ('fontSize') : 28, ('fontColor') : '#65B741' // Green color
+            ])
+
+        assertionMessage = "Assertion Passed: Actual result ($actualResult) matches expected result ($expectedResult)"
     }
     catch (AssertionError e) {
-        println("Assertion Failed: Actual result ($actualResult) does not match expected result ($expectedResult)")
+        WebUI.takeScreenshot([('text') : testCaseValue + ' - Failed', ('x') : 50, ('y') : 750, ('fontSize') : 28, ('fontColor') : '#FF0000' // Red color
+            ])
+
+        assertionMessage = "Assertion Failed: Actual result ($actualResult) does not match expected result ($expectedResult)"
     } 
     
-    'Screenshot'
-    WebUI.takeScreenshot()
+    println(assertionMessage)
 }
 
 for (int rowNegatif = rowPositif; rowNegatif <= findTestData('Data Test BTN').getRowNumbers(); rowNegatif++) {
@@ -110,8 +119,24 @@ for (int rowNegatif = rowPositif; rowNegatif <= findTestData('Data Test BTN').ge
         println('Assertion Failed: Element is clickable')
     } 
     
-    'Screenshot'
-    WebUI.takeScreenshot()
+    def testCaseValue = findTestData('Data Test BTN').getValue('Test Case', rowNegatif)
+
+    def assertionMessage
+
+    try {
+        WebUI.verifyElementNotClickable(findTestObject('Page Hitung Harga Properti Maksimal BTN/Button Hitung'))
+
+        WebUI.takeScreenshot([('text') : testCaseValue + ' - Passed', ('x') : 50, ('y') : 750, ('fontSize') : 32, ('fontColor') : '#65B741' // Green color
+            ])
+
+        println('Assertion Passed: Element is not clickable')
+    }
+    catch (Exception e) {
+        WebUI.takeScreenshot([('text') : testCaseValue + ' - Failed', ('x') : 50, ('y') : 750, ('fontSize') : 32, ('fontColor') : '#FF0000' // Red color
+            ])
+
+        println('Assertion Failed: Element is clickable')
+    } 
 }
 
 WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
